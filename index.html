@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title></title>
+		<title>User Survey with Javascript</title>
 
 		<!-- font awesome library -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
@@ -13,13 +13,125 @@
 
 		<!-- This will make bootstrap css work -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
 		<!-- This connects my css external file to the index.html-->
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		
-		<div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
+					<div id="mainForm">
+						<h1>Survey</h1>
+
+						<form id="form" class="form-horizontal">
+		<!-- question 1 using select and options -->
+							<h4>Which U.S. city would you prefer to live in?</h4>
+							<select class="form-control">
+								<option class="question1" value="">select your city</option>
+								<option class="question1" value="San Francico">San Francisco</option>
+								<option class="question1" value="Los Angeles">Los Angeles</option>
+								<option class="question1" value="New York">New York</option>
+								<option class="question1" value="Chicago">Chicago</option>
+								<option class="question1" value="Austin">Austin</option>
+								<option class="question1" value="Honolulu">Honolulu</option>
+								<option class="question1" value="Washington D.C.">Washington D.C.</option>
+								<option class="question1" value="New Orleans">New Orleans</option>
+								<option class="question1" value="Seattle">Seattle</option>
+								<option class="question1" value="Boston">Boston</option>
+								<option class="question1" value="Miami">Miami</option>
+							</select>
+
+		<!-- question 2 using checkboxes -->
+							<h4>What are some of your hobbies?</h4>
+							<div>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="reading">reading books</label>
+							</div>
+							<div>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="watching">watching shows & movies</label>
+							</div>
+							<div>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="exercising">going to the gym</label>
+							</div>
+							<div>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="cooking">cooking delicious food</label>
+							</div>
+							<div>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="shopping">shopping for therapy</label>
+							</div>
+							<div>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="listening">listening to music</label>
+							</div>
+							<div>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="dancing">taking dance class</label>
+							</div>
+							<div>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="creating">creating art</label>
+							</div>
+							<div>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="coding">coding for fun</label>
+							</div>
+							<div>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="using apps">using apps on your phone</label>
+							</div>
+							<div>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="none">None of the above</label>
+							</div>
+
+		<!-- question 3 using radio buttons -->
+							<h4>What's your favorite color?</h4>
+							<div class="form-group">
+								<div class="radio">
+									<label>
+										<input type="radio" name="radio1" class="question3" value="red">red
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="radio1" class="question3" value="blue">blue
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="radio1" class="question3" value="purple">purple
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="radio1" class="question3" value="pink">pink
+									</label>
+								</div>
+
+								<div class="radio">
+									<label>
+										<input type="radio" name="radio1" class="question3" value="orange">orange
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="radio1" class="question3" value="green">green
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="radio1" class="question3" value="yellow">yellow
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="radio1" class="question3" value="black">black
+									</label>
+								</div>
+							</div>
+							<button type="button" id="submitButton" class="btn btn-success">Submit Survey</button>
+						</form>
+
+		<!-- display results -->
+					<div id="results"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 			
 		</div>
 
