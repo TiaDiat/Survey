@@ -103,7 +103,7 @@ function submitForm() {
 	//add a class of success to results
 	results.className = "success";
 	//update the text content of results upon survey completion
-	results.textContent = "thanks for completing the survey!";
+	results.textContent = "thanks for taking the time to submit the survey!";
 
 	// confirm new objects existence
 	console.log("current survey answers: #1 " + surveyAnswers.selected + " #2 " + surveyAnswers.checked + " #3 " + surveyAnswers.radio);

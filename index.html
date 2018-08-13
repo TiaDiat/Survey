@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>User Survey with Javascript</title>
 
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
+
 		<!-- font awesome library -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 
@@ -20,14 +23,14 @@
 		
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
+				<div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-12 col-lg-offset-1">
 					<div id="mainForm">
 						<h1>Survey</h1>
 
 						<form id="form" class="form-horizontal">
 		<!-- question 1 using select and options -->
 							<h4>Which U.S. city would you prefer to live in?</h4>
-							<select class="form-control">
+							<select class="form-control col-lg-12">
 								<option class="question1" value="">select your city</option>
 								<option class="question1" value="San Francico">San Francisco</option>
 								<option class="question1" value="Los Angeles">Los Angeles</option>
@@ -43,87 +46,92 @@
 							</select>
 
 		<!-- question 2 using checkboxes -->
-							<h4>What are some of your hobbies?</h4>
+							<h4 class="q2">What are some of your hobbies?</h4>
 							<div>
-								<label class="checkbox-inline"><input type="checkbox" class="question2" value="reading">reading books</label>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="reading"> reading books</label>
 							</div>
 							<div>
-								<label class="checkbox-inline"><input type="checkbox" class="question2" value="watching">watching shows & movies</label>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="watching"> watching shows & movies</label>
 							</div>
 							<div>
-								<label class="checkbox-inline"><input type="checkbox" class="question2" value="exercising">going to the gym</label>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="exercising"> going to the gym</label>
 							</div>
 							<div>
-								<label class="checkbox-inline"><input type="checkbox" class="question2" value="cooking">cooking delicious food</label>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="cooking"> cooking delicious food</label>
 							</div>
 							<div>
-								<label class="checkbox-inline"><input type="checkbox" class="question2" value="shopping">shopping for therapy</label>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="shopping"> shopping for therapy</label>
 							</div>
 							<div>
-								<label class="checkbox-inline"><input type="checkbox" class="question2" value="listening">listening to music</label>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="listening"> listening to music</label>
 							</div>
 							<div>
-								<label class="checkbox-inline"><input type="checkbox" class="question2" value="dancing">taking dance class</label>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="dancing"> taking dance class</label>
 							</div>
 							<div>
-								<label class="checkbox-inline"><input type="checkbox" class="question2" value="creating">creating art</label>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="creating"> creating art</label>
 							</div>
 							<div>
-								<label class="checkbox-inline"><input type="checkbox" class="question2" value="coding">coding for fun</label>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="coding"> coding for fun</label>
 							</div>
 							<div>
-								<label class="checkbox-inline"><input type="checkbox" class="question2" value="using apps">using apps on your phone</label>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="using apps"> using apps on your phone</label>
 							</div>
 							<div>
-								<label class="checkbox-inline"><input type="checkbox" class="question2" value="none">None of the above</label>
+								<label class="checkbox-inline"><input type="checkbox" class="question2" value="none"> None of the above</label>
 							</div>
 
 		<!-- question 3 using radio buttons -->
 							<h4>What's your favorite color?</h4>
 							<div class="form-group">
-								<div class="radio">
+								<div class="radio red">
 									<label>
-										<input type="radio" name="radio1" class="question3" value="red">red
+										<input type="radio" name="radio1" class="question3" value="red">  red
 									</label>
 								</div>
-								<div class="radio">
+								<div class="radio blue">
 									<label>
-										<input type="radio" name="radio1" class="question3" value="blue">blue
+										<input type="radio" name="radio1" class="question3" value="blue">  blue
 									</label>
 								</div>
-								<div class="radio">
+								<div class="radio purple">
 									<label>
-										<input type="radio" name="radio1" class="question3" value="purple">purple
+										<input type="radio" name="radio1" class="question3" value="purple">  purple
 									</label>
 								</div>
-								<div class="radio">
+								<div class="radio pink">
 									<label>
-										<input type="radio" name="radio1" class="question3" value="pink">pink
+										<input type="radio" name="radio1" class="question3" value="pink">  pink
 									</label>
 								</div>
 
-								<div class="radio">
+								<div class="radio orange">
 									<label>
-										<input type="radio" name="radio1" class="question3" value="orange">orange
+										<input type="radio" name="radio1" class="question3" value="orange">  orange
 									</label>
 								</div>
-								<div class="radio">
+								<div class="radio green">
 									<label>
-										<input type="radio" name="radio1" class="question3" value="green">green
+										<input type="radio" name="radio1" class="question3" value="green">  green
 									</label>
 								</div>
-								<div class="radio">
+								<div class="radio yellow">
 									<label>
-										<input type="radio" name="radio1" class="question3" value="yellow">yellow
+										<input type="radio" name="radio1" class="question3" value="yellow">  yellow
 									</label>
 								</div>
-								<div class="radio">
+								<div class="radio grey">
 									<label>
-										<input type="radio" name="radio1" class="question3" value="black">black
+										<input type="radio" name="radio1" class="question3" value="grey">  grey
+									</label>
+								</div>
+								<div class="radio black">
+									<label>
+										<input type="radio" name="radio1" class="question3" value="black">  black
 									</label>
 								</div>
 							</div>
-							<button type="button" id="submitButton" class="btn btn-success">Submit Survey</button>
+							<button type="button" id="submitButton" class="btn btn-light">Submit Survey</button>
 						</form>
 
 		<!-- display results -->

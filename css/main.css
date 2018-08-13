@@ -1,1 +1,89 @@
+body {
+	background-color: #2F4F4F;
+}
 
+div.container {
+	font-family: 'Trirong', serif;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+	color: #2F4F4F;
+	padding-bottom: 20px;
+}
+h4 {
+	padding-top: 15px;
+}
+
+h4.q2 {
+	padding-top: 25px;
+}
+
+#mainForm {
+	border: 1px solid #008B8B;
+	border-radius: 15px;
+	margin: auto;
+	padding: 30px 30px 0;
+	background-color: #BC8F8F;
+	/*position: absolute;*/
+	/*display: inline-block;*/
+
+}
+
+label.checkbox-inline,
+.radio {
+	padding-left: 20px;
+}
+
+#results {
+	color: #BC8F8F;
+	margin: 10px 0;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.success {
+	background-color: #008080;
+	transition: 0.3s all ease-in-out;
+}
+
+.failure {
+	background-color: #B22222;
+	transition: 0.3s all ease-in-out;
+}
+
+select.form-control,
+label.checkbox-inline,
+div.radio,
+#submitButton {
+	font-size: 1.5em;
+}
+/*each color matches the color of the font*/
+div.red {
+	color: red;
+}
+div.blue {
+	color: blue;
+}
+div.purple {
+	color: purple;
+}
+div.pink {
+	color: pink;
+}
+div.orange {
+	color: orange;
+}
+div.green {
+	color: green;
+}
+div.yellow {
+	color: yellow;
+}
+div.grey {
+	color: grey;
+}
+div.black {
+	color: black;
+}
